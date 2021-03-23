@@ -2,7 +2,7 @@
 [Tema3 Limbaje Formale si Automate (2020-2021, seria CB)] 
 
 
-Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se converteste intr-un NFA si apoi DFA.
+Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se converteste intr-un NFA(algoritmul lui Thomson) si apoi din NFA in DFA(Subset Construction).
 
 
 #### RULARE
@@ -45,7 +45,7 @@ Pentru a transforma Regex-ul in NFA se foloseste algoritmul lui Thompson care
 contruieste NFA-ul prin parcurgerea ierarhiei de clase, adaugand stari si
 epsilon-tranzitii. Pentru a evita confuzia de nume ale starilor, acestea se
 redenumesc folosind un offset (cu functia rename_states din nfa.py). NFA-ul
-rezultat se converteste intr-un DFA, utilizand algoritmul implementat la tema
+rezultat se converteste intr-un DFA, utilizand algoritmul Subset Construction implementat la tema
 precedenta.
 
 Detalii despre conversia din NFA in DFA se gasesc aici: https://github.com/stefaniagherasie/Tema2LFA-NFAtoDFA
