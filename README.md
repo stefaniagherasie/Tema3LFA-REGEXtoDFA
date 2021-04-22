@@ -5,7 +5,7 @@
 Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se converteste intr-un NFA (algoritmul lui Thomson) si apoi din NFA in DFA (Subset Construction).
 
 
-#### RULARE
+## Rulare
 > ```shell   
 > python3 main.py <input−file> <output−file_dfa> <output−file_nfa>
 > ```
@@ -22,7 +22,7 @@ Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se con
 >    - pe urmatoarele linii, cate o tranzitie, constand ıntr-o stare, un simbol, apoi o lista de stari urmatoare
 
 
-#### IMPLEMENTARE
+## Implementare
 Am creat o clasa ```Regex``` care reprezinta o instanta regex, folosind-o pentru
 a extinde o ierarhie de clase care sa exprime o expresie regulata (```Symbol```,
 ```Concat```, ```Union```, ```OpenPar```, ```ClosePar```, ```Star```, ```UnionMark```).
