@@ -6,20 +6,20 @@ Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se con
 
 
 ## Rulare
-> ```shell   
-> python3 main.py <input−file> <output−file_dfa> <output−file_nfa>
-> ```
->
-> **Fisierul de input** contine o expresie regulata formata din:
->    - litere mici din intervalul ```’a’...’z’```
->    - ```e1e2``` sau ```(e1e2)``` - concatenarea a 2 subexpresii
->    - ```e1|e2``` sau ```(e1|e2)``` - reuniunea a 2 subexpresii
->    - ```(e1)*``` - kleene star aplicat unei subexpresii
->
-> **Fisierele de output** vor descrie un NFA/DFA astfel:
->    - pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
->    - pe a doua linie, lista de stari finale, separate de cate un spatiu
->    - pe urmatoarele linii, cate o tranzitie, constand ıntr-o stare, un simbol, apoi o lista de stari urmatoare
+```shell   
+  python3 main.py <input−file> <output−file_dfa> <output−file_nfa>
+```
+
+**Fisierul de input** contine o expresie regulata formata din:
+   - litere mici din intervalul ```’a’...’z’```
+   - ```e1e2``` sau ```(e1e2)``` - concatenarea a 2 subexpresii
+   - ```e1|e2``` sau ```(e1|e2)``` - reuniunea a 2 subexpresii
+   - ```(e1)*``` - kleene star aplicat unei subexpresii
+
+**Fisierele de output** vor descrie un NFA/DFA astfel:
+- pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
+- pe a doua linie, lista de stari finale, separate de cate un spatiu
+- pe urmatoarele linii, cate o tranzitie, constand ıntr-o stare, un simbol, apoi o lista de stari urmatoare
 
 
 ## Implementare
