@@ -44,4 +44,5 @@ Pentru a transforma Regex-ul in NFA se foloseste ```Algoritmul lui Thompson``` c
 contruieste NFA-ul prin parcurgerea ierarhiei de clase, adaugand stari si
 epsilon-tranzitii. Pentru a evita confuzia de nume ale starilor, acestea se
 redenumesc folosind un offset (cu functia rename_states din nfa.py). NFA-ul
-rezultat se converteste intr-un DFA, utilizand algoritmul ```Subset Construction``` implementat [aici](https://github.com/stefaniagherasie/Tema2LFA-NFAtoDFA)
+rezultat se converteste intr-un DFA, utilizand algoritmul ```Subset Construction``` 
+(detalii despre implementare [aici](https://github.com/stefaniagherasie/Tema2LFA-NFAtoDFA)).
