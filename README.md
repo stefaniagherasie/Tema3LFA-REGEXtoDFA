@@ -20,7 +20,7 @@ Tema presupune parsarea unei expresii regulate, folosind un PDA. Expresia se con
 - pe prima linie, un intreg ce reprezinta numarul de stari (stare initiala 0)
 - pe a doua linie, lista de stari finale, separate de cate un spatiu
 - pe urmatoarele linii, cate o tranzitie, constand ıntr-o stare, un simbol, apoi o lista de stari urmatoare
-
+<br>
 
 ## Implementare
 Am creat o clasa ```Regex``` care reprezinta o instanta regex, folosind-o pentru
